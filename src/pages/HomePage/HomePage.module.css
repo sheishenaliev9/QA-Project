@@ -1,0 +1,64 @@
+.home__inner {
+  display: flex;
+  align-items: center;
+}
+
+.home__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home__title h1 {
+  font-size: 64px;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 12px 0 32px 0;
+}
+
+.home__title p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.home__title button {
+  font-weight: 600;
+  border: none;
+  background-color: offwhite;
+  font-size: 16px;
+  padding: 15px 32px;
+  cursor: pointer;
+  transform: all 0.3s;
+  position: relative;
+}
+
+.home__title button:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -3px;
+  left: -3px;
+  border-top: 2px solid tomato;
+  border-left: 2px solid tomato;
+  transition: all 0.25s;
+}
+
+.home__title button:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -3px;
+  right: -3px;
+  border-bottom: 2px solid tomato;
+  border-right: 2px solid tomato;
+  transition: all 0.3s;
+}
+
+.home__title button:hover:before,
+button:hover:after {
+  width: 104%;
+  height: 110%;
+}

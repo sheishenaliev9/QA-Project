@@ -1,0 +1,76 @@
+{
+  "sneakers": [
+    {
+      "id": 1,
+      "brand": "Nike",
+      "model": "Nike Dunk Low Retro",
+      "price": 110.99,
+      "about": "Created for the hardwood but taken to the streets, the Nike Dunk Low Retro returns with crisp overlays and original team colors. This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better. Modern footwear technology helps bring the comfort into the 21st century.",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/48ef0c32-8a7b-4588-8256-81a8c731cd16/dunk-low-retro-mens-shoes-76KnBL.png"
+    },
+    {
+      "id": 2,
+      "brand": "Nike",
+      "model": "Nike Air VaporMax 2023 Flyknit",
+      "price": 168.99,
+      "about": "Have you ever walked on Air? Step into the Air VaporMax 2023 to see how it's done. The innovative tech is revealed through the perforated sockliner (pull it out to see more). The stretchy Flyknit upper is made with at least 20% recycled content by weight.",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bc65cd4b-ce49-4ab9-88a4-0dbcf20ebcbf/air-vapormax-2023-flyknit-mens-shoes-3q1qZg.png"
+    },
+    {
+      "id": 3,
+      "brand": "Adidas",
+      "model": "Superstar XLG",
+      "price": 110.99,
+      "about": "The adidas Superstar was introduced to the public in 1970, debuting as a low-top basketball shoe with an upper made entirely of leather featuring the famous rubber shell toe. It gained the love of athletes for its next-level grip, lightweight flexibility and enhanced protection on the court.",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1e3594e9920a473eb6585fe3df964a03_9366/Superstar_XLG_Shoes_White_IF9995_06_standard.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Adidas",
+      "model": "Samba OG",
+      "price": 100.99,
+      "about": "The Samba OG is the classic and most common Samba silhouette on the market. Usually, you can find this pair draped in a leather and suede combination with a contrasting gum sole and the classic Three-Stripe branding. Via: adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1b2bea5978714b468a25afb200f993ed_9366/Samba_OG_Shoes_White_IG1025_06_standard.jpg"
+    },
+    {
+      "id": 5,
+      "brand": "Nike",
+      "model": "Nike P-6000",
+      "about": "The Nike P-6000 draws on the 2006 Nike Air Pegasus—bringing you a mash-up of iconic style that's breathable, comfortable and evocative of that early-2000s vibe.",
+      "price": 120.99,
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87109660-6b0e-441b-b93a-c6a8c6988bc9/p-6000-shoes-XkgpKW.png"
+    },
+    {
+      "id": 6,
+      "brand": "Adidas",
+      "model": "Gazelle Indoor",
+      "price": 150.99,
+      "about": "Created for indoor sports back in the '70s, the adidas Gazelle Indoor Shoes have spent many years floating through different subcultures. From music to fashion, their mark is clear. The iconic low-profile sneakers get a slight update here with a premium nylon upper detailed with luxe suede overlays.",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/13243a9cb07e4cb6b774208b663fe379_9366/Gazelle_Indoor_Shoes_Burgundy_IG4996_06_standard.jpg"
+    },
+    {
+      "id": 7,
+      "brand": "New Balance",
+      "model": "New Balance 530",
+      "price": 110.99,
+      "about": "The 530 men’s sneaker is a throwback of one of our classic running shoes. This casual kick combines everyday style with modern tech. ABZORB cushioning underfoot adds superior comfort. Put a retro spin on your step with the 530 men’s sneaker.",
+      "image": "https://nb.scene7.com/is/image/NB/mr530sg_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+    },
+    {
+      "id": 8,
+      "brand": "New Balance",
+      "model": "New Balance 2002RD",
+      "price": 150.99,
+      "about": "Inspired by the popular MR2002, the New Balance 2002RD casual shoes offer a callback to the running style of the 2000s in a modified mule silhouette. The upper of these sneakers is crafted from a mix of rugged nubuck leather and lightweight mesh for a balanced feel. Impact-absorbing midsoles, cushioned heels and arch support from the Stability Web technology help to keep your feet comfortable through adventure after adventure.",
+      "image": "https://nb.scene7.com/is/image/NB/m2002rdq_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+    },
+    {
+      "id": 9,
+      "brand": "New Balance",
+      "model": "ALD x New Balance 550",
+      "price": 129.99,
+      "about": "Aimé Leon Dore presents the ‘Basketball Oxford’. This new interpretation of the perennial favorite swaps out the 550’s standard white leather construction for a casual touch. The 550’s upper construction features canvas underlays and premium, hairy suede overlays, outfitted in two muted, earth toned colorways - brown and taupe. Co-branding at the tongue and heel features Aimé Leon Dore's signature apple basketball mark.",
+      "image": "https://nb.scene7.com/is/image/NB/bb550db1_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+    }
+  ]
+}
