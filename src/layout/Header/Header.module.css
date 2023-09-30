@@ -17,7 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* gap: 32px; */
     width: 20%;
 }
 
@@ -51,4 +50,25 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1010px) {
+    .header__inner {
+        justify-content: space-around;
+    }
+
+    .header__nav {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .header__inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header__nav {
+        width: 60%;
+    }
+}
 

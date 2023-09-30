@@ -16,15 +16,6 @@ export const Header = () => {
             <Link to="/sneakers">Sneakers</Link>
             <Link to="/cart">Cart</Link>
           </nav>
-
-          {/* <div className={styles.header__actions}>
-            <Link to="/cart">
-              <button>
-                <p>Cart</p>
-                <img src={basketIcon} alt="basket" />
-              </button>
-            </Link>
-          </div> */}
         </div>
       </div>
     </header>
