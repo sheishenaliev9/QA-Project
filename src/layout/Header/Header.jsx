@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
-import basketIcon from "../../assets/basket-icon.svg";
 import { Logo } from "../../components/Logo/Logo";
 
 export const Header = () => {
@@ -15,16 +14,17 @@ export const Header = () => {
           <nav className={styles.header__nav}>
             <Link to="/">Home</Link>
             <Link to="/sneakers">Sneakers</Link>
+            <Link to="/cart">Cart</Link>
           </nav>
 
-          <div className={styles.header__actions}>
+          {/* <div className={styles.header__actions}>
             <Link to="/cart">
               <button>
                 <p>Cart</p>
                 <img src={basketIcon} alt="basket" />
               </button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

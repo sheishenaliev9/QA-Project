@@ -61,3 +61,11 @@
 .cart__item__actions img {
   width: 35px;
 }
+
+
+@media screen and (max-width: 990px)  {
+  .cart__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}

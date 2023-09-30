@@ -1,8 +1,8 @@
-
 .home__inner {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 120px;
 }
 
 .home__title {
@@ -11,7 +11,7 @@
 }
 
 .home__title h1 {
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 800;
   text-align: left;
   text-transform: uppercase;
@@ -64,6 +64,12 @@ button:hover:after {
   height: 108%;
 }
 
+.home__about {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .home__about__title {
   display: flex;
   flex-direction: column;
@@ -72,11 +78,52 @@ button:hover:after {
 }
 
 .home__about__title h2 {
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 800;
 }
 
 .home__about__title p {
   color: #8e8e8e;
   font-weight: 700;
+}
+
+.home__about__info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.home__info__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.home__about__block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  gap: 25px;
+}
+
+.home__about__block h2 {
+  font-size: 36px;
+}
+
+.home__about__block p {
+  font-size: 18px;
+  color: #8e8e8e;
+}
+
+
+@media screen and (min-width: 1200px) {
+  
 }

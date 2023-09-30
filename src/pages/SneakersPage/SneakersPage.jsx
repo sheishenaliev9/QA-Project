@@ -4,8 +4,6 @@ import { getAllSneakers } from "../../store/SneakersSlice";
 import { SneakerItem } from "../../components/SneakerItem/SneakerItem";
 import styles from "./SneakersPage.module.css";
 
-// ... ваши другие импорты
-
 export const SneakersPage = () => {
   const [filteredSneakers, setFilteredSneakers] = useState([]);
   const [searchState, setSearchState] = useState("all");
@@ -22,6 +20,8 @@ export const SneakersPage = () => {
     });
     setSearchState("filtered");
     setFilteredSneakers(newFilteredSneakers);
+
+    if (newFilteredSneakers.length === 0) setSearchState("notFound");
   };
 
   const sneakersFilter = (e) => {
@@ -47,11 +47,15 @@ export const SneakersPage = () => {
     <div className={styles.sneakers__wrapper}>
       <div className="container">
         <div className={styles.sneakers__inner}>
+          <div className={styles.sneaker__title}>
+            <h1>All Our Sneakers</h1>
+            <h3>Choose Your own shoes</h3>
+          </div>
           <div className={styles.sneakers__actions}>
             <div className={styles.sneakers__search}>
               <input
                 type="text"
-                placeholder="Поиск"
+                placeholder="Search"
                 value={value}
                 onChange={handleSearch}
               />
@@ -59,7 +63,7 @@ export const SneakersPage = () => {
 
             <div className={styles.sneakers__filter}>
               <button onClick={sneakersFilter} name="all">
-                Все
+                All
               </button>
               <button onClick={sneakersFilter} name="Nike">
                 Nike
@@ -74,13 +78,17 @@ export const SneakersPage = () => {
           </div>
 
           <div className={styles.sneakers__cards}>
-            {(searchState === "all" ? sneakers : filteredSneakers).map((sneaker) => (
-              <SneakerItem key={sneaker.id} sneaker={sneaker} />
-            ))}
+            {(searchState === "all" ? sneakers : filteredSneakers).map(
+              (sneaker) => (
+                <SneakerItem key={sneaker.id} sneaker={sneaker} />
+              )
+            )}
+            {searchState === "notFound" && (
+              <div className={styles.notFound}>Product is not found</div>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 };
-

@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { addToCart, getCartItems, getSneaker } from "../../store/SneakersSlice";
-import styles from "./SneakerPage.module.css";
 import { MyButton } from "../../components/UI/MyButton/MyButton";
+import cartSuccessIcon from "../../assets/cart_success_icon.svg";
+import styles from "./SneakerPage.module.css";
 
 export const SneakerPage = () => {
   const [isAdded, setIsAdded] = useState(false);
@@ -21,12 +22,11 @@ export const SneakerPage = () => {
   };
 
   useEffect(() => {
-    console.log(cart)
+    console.log(cart);
     if (cart.find((cartItem) => cartItem.id === sneaker.id)) {
       setIsAdded(true);
     }
-  }, [sneaker, cart])
-  
+  }, [sneaker, cart]);
 
   return (
     <div className={styles.sneaker__wrapper}>
@@ -42,9 +42,16 @@ export const SneakerPage = () => {
             <p>{sneaker.about}</p>
 
             <div className={styles.sneaker__title__actions}>
-              <MyButton onClick={() => handleAddToCart(sneaker)}>
-                {isAdded ? "Item is added!" : "Add to cart"}
-              </MyButton>
+              {isAdded ? (
+                <div className={styles.sneaker__success}>
+                  <img src={cartSuccessIcon} alt="" />
+                  <span>Product is Added</span>
+                </div>
+              ) : (
+                <MyButton onClick={() => handleAddToCart(sneaker)}>
+                  Add to cart
+                </MyButton>
+              )}
             </div>
           </div>
         </div>

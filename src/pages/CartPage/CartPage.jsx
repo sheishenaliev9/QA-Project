@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import styles from "./CartPage.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { DeleteFromCart, getCartItems } from "../../store/SneakersSlice";
+import {
+  DeleteFromCart,
+  PurchaseCart,
+  getCartItems,
+} from "../../store/SneakersSlice";
 import trashIcon from "../../assets/delete-trash.svg";
 import { MyButton } from "../../components/UI/MyButton/MyButton";
 
@@ -9,16 +13,16 @@ export const CartPage = () => {
   const { cart } = useSelector((state) => state.sneakers);
   const dispatch = useDispatch();
 
+  const total = cart.reduce((acc, item) => acc + item.price, 0);
+
   const handleDelete = async (id) => {
     await dispatch(DeleteFromCart(id));
     dispatch(getCartItems());
   };
 
-  const handlePurchase = () => {
-    dispatch(getCartItems());
+  const handlePurchase = (arg) => {
+    dispatch(PurchaseCart(arg));
   };
-
-  const total = cart.reduce((acc, item) => acc + item.price, 0);
 
   useEffect(() => {
     dispatch(getCartItems());
@@ -58,7 +62,7 @@ export const CartPage = () => {
               </div>
 
               <div className={styles.card__order__actions}>
-                <MyButton onClick={handlePurchase}>Purchase</MyButton>
+                <MyButton onClick={() => handlePurchase([])}>Purchase</MyButton>
               </div>
             </div>
           </div>

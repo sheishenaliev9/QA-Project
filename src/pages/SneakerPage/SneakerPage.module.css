@@ -22,3 +22,15 @@
   text-align: left;
   width: 35%;
 }
+
+.sneaker__success {
+  width: 50%;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.sneaker__success img {
+  width: 80px;
+}

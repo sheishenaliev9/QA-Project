@@ -38,3 +38,10 @@
     width: 102%;
     height: 108%;
   }
+
+
+  .btn:disabled {
+    background-color: #9EE37D;
+    content: "";
+    color: #000;
+  }

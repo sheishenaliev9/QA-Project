@@ -70,6 +70,19 @@ export const DeleteFromCart = createAsyncThunk(
   }
 );
 
+export const PurchaseCart = createAsyncThunk(
+  "PurchaseCart",
+  async (arg, { dispatch }) => {
+    try {
+      const { data } = await axios.put(`${URL}/cart`, arg);
+      dispatch(getCartItems());
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+)
+
 const defaultState = {
   sneakers: [],
   sneaker: {},
@@ -95,6 +108,10 @@ export const sneakersSlice = createSlice({
     [getCartItems.fulfilled]: (state, action) => {
       state.cart = action.payload;
     },
+
+    [PurchaseCart.fulfilled]: (state, action) => {
+      state.cart = action.payload;
+    } 
   },
 });
 
