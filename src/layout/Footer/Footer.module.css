@@ -1,0 +1,27 @@
+.footer {
+  padding: 40px 0;
+  border-top: 2px solid tomato;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 50%;
+}
+
+.footer__logo__subtitle {
+  width: 70%;
+  color: #8e8e8e;
+}
+
+
+.footer__other {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #8e8e8e;
+}

@@ -7,9 +7,7 @@ export const Layout = () => {
   return (
     <div>
       <Header />
-      <div>
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </div>
   );

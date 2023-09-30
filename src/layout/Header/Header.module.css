@@ -1,23 +1,24 @@
 
 .header {
+    width: 100%;
     padding: 24px 0;
     border-bottom: 2px solid tomato;
-    border-radius:30%;
+    border-radius: 30%;
 }
 
-.header__logo {
-    font-size: 36px;
-    font-weight: 800;
+.header__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header__logo a {
-    text-decoration: none;
-    color: black;
-}
 .header__nav {
     display: flex;
     align-items: center;
-    gap: 32px;
+    justify-content: space-around;
+    /* gap: 32px; */
+    width: 20%;
 }
 
 
@@ -33,15 +34,21 @@
     color: tomato;
 }
 
+.header__actions {
+    transition: .3s;
+}
+
+.header__actions:hover {
+    transform: scale(1.1);
+}
+
 .header__actions button {
     border: none;
     outline: none;
     background: transparent;
-}
-
-
-.header__inner {
+    cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
+
+

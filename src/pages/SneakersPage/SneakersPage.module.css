@@ -1,38 +1,57 @@
-.sneaker__cards {
+.sneakers__wrapper {
+  padding: 30px 0;
+}
+
+.sneakers__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.sneakers__search input {
+  width: 300px;
+  height: 30px;
+  padding-left: 15px;
+  outline: none;
+  border: 2px solid tomato;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sneakers__search input:focus {
+  transform: scale(1.1);
+}
+
+.sneakers__filter {
+  display: flex;
+  gap: 20px;
+}
+
+.sneakers__filter button {
+  width: 150px;
+  height: 35px;
+  outline: none;
+  color: #fff;
+  border: 2px solid tomato;
+  background-color: tomato;
+  border-radius: 8px;
+  transition: 0.3s;
+
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.sneakers__filter button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.sneakers__cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
   margin: 60px 0;
-}
-
-.card { 
-    transition: .3s;
-    border-radius: 8px;
-    padding: 15px;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0px 5px 10px 2px tomato;
-  -moz-box-shadow: 0px 5px 10px 2px tomato;
-  box-shadow: 0px 5px 10px 2px tomato;
-
-  transform: scale(1.03);
-}
-
-.card__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card__title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 15px 0;
-}
-
-.card__image img {
-  width: 350px;
 }

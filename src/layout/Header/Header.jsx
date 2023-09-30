@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 import basketIcon from "../../assets/basket-icon.svg";
+import { Logo } from "../../components/Logo/Logo";
 
 export const Header = () => {
   return (
@@ -9,7 +10,7 @@ export const Header = () => {
       <div className="container">
         <div className={styles.header__inner}>
           <div className={styles.header__logo}>
-            <Link to="/">Sneakers .</Link>
+            <Logo />
           </div>
           <nav className={styles.header__nav}>
             <Link to="/">Home</Link>
@@ -17,9 +18,12 @@ export const Header = () => {
           </nav>
 
           <div className={styles.header__actions}>
-            <button>
-              <img src={basketIcon} alt="basket" />
-            </button>
+            <Link to="/cart">
+              <button>
+                <p>Cart</p>
+                <img src={basketIcon} alt="basket" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
