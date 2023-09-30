@@ -1,11 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./CartPage.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  DeleteFromCart,
-  PurchaseCart,
-  getCartItems,
-} from "../../store/SneakersSlice";
+import { DeleteFromCart, getCartItems } from "../../store/SneakersSlice";
 import trashIcon from "../../assets/delete-trash.svg";
 import { MyButton } from "../../components/UI/MyButton/MyButton";
 
@@ -18,10 +14,6 @@ export const CartPage = () => {
   const handleDelete = async (id) => {
     await dispatch(DeleteFromCart(id));
     dispatch(getCartItems());
-  };
-
-  const handlePurchase = (arg) => {
-    dispatch(PurchaseCart(arg));
   };
 
   useEffect(() => {
@@ -62,7 +54,7 @@ export const CartPage = () => {
               </div>
 
               <div className={styles.card__order__actions}>
-                <MyButton onClick={() => handlePurchase([])}>Purchase</MyButton>
+                <MyButton>Purchase</MyButton>
               </div>
             </div>
           </div>

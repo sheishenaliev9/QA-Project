@@ -27,3 +27,17 @@
   gap: 15px;
   color: #8e8e8e;
 }
+
+
+@media screen and (max-width: 570px)  {
+  .footer__inner {
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer__logo {
+    text-align: center;
+    align-items: center;
+  }
+}

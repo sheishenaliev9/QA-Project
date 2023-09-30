@@ -34,3 +34,21 @@
 .sneaker__success img {
   width: 80px;
 }
+
+
+@media screen and (max-width: 950px) {
+  .sneaker__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sneaker__title {
+    align-items: center;
+    width: 70%;
+  }
+
+  .sneaker__success {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

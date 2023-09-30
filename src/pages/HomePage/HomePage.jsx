@@ -5,22 +5,23 @@ import guaranteeIcon from "../../assets/guarantee.svg";
 import uniqueIcon from "../../assets/unique.svg";
 import trendIcon from "../../assets/trend.svg";
 import { Link } from "react-router-dom";
+import { MyButton } from '../../components/UI/MyButton/MyButton';
 
 export const HomePage = () => {
   return (
     <div className={styles.home__wrapper}>
       <div className="container">
         <div className={styles.home__inner}>
-          <div className={styles.home__title}>
-            <div>
+          <div className={styles.home__block}>
+            <div className={styles.home__title}>
               <p>Sneaker Collection</p>
               <h1>Good shoes take you good places</h1>
               <Link to="/sneakers">
-                <button>Shop Now</button>
+                <MyButton>Shop Now</MyButton>
               </Link>
             </div>
 
-            <div>
+            <div className={styles.home__img}>
               <img src={shoesImg} alt="" />
             </div>
           </div>
