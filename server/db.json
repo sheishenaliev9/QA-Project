@@ -73,22 +73,5 @@
       "image": "https://nb.scene7.com/is/image/NB/bb550db1_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "brand": "Nike",
-      "model": "Nike Dunk Low Retro",
-      "price": 110.99,
-      "about": "Created for the hardwood but taken to the streets, the Nike Dunk Low Retro returns with crisp overlays and original team colors. This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better. Modern footwear technology helps bring the comfort into the 21st century.",
-      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/48ef0c32-8a7b-4588-8256-81a8c731cd16/dunk-low-retro-mens-shoes-76KnBL.png"
-    },
-    {
-      "id": 2,
-      "brand": "Nike",
-      "model": "Nike Air VaporMax 2023 Flyknit",
-      "price": 168.99,
-      "about": "Have you ever walked on Air? Step into the Air VaporMax 2023 to see how it's done. The innovative tech is revealed through the perforated sockliner (pull it out to see more). The stretchy Flyknit upper is made with at least 20% recycled content by weight.",
-      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bc65cd4b-ce49-4ab9-88a4-0dbcf20ebcbf/air-vapormax-2023-flyknit-mens-shoes-3q1qZg.png"
-    }
-  ]
+  "cart": []
 }
